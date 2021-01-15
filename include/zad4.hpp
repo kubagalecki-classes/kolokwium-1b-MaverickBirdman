@@ -4,19 +4,20 @@
 #include <vector>
 
 // tutaj funkcja stworzZespol
+using namespace std;
 vector<Artysta> stworzZespol(int a, const std::string& s)
 {
 	if (s.size() != a)
 	{
 		throw std::logic_error("abc");
-}
+	}
 	else
-	{
+	{ 
 	vector<Artysta> v;
 	for (int i = 0; i < a; i++)
 	{
 		v.push_back(Artysta(s, i + 1));
 	}
 	return v;
-}
+	}
 }
