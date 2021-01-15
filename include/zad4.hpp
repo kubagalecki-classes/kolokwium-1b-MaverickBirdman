@@ -14,4 +14,5 @@ vector<Artysta> stworzZespol(int a, const std::string& s)
 	v[0] = Artysta(s, 1);
 	v[1] = Artysta(s, 2);
 	v[2] = Artysta(s, 3);
+	return v;
 }
