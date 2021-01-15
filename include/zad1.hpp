@@ -11,10 +11,10 @@ class Artysta	//podaj nazwe klasy
 {
 public:
 	Artysta():pseudonim("Anonim"), mls(0) {}
-	Artysta(const string& a, unsigned b) :pseudonim(a), mls(b) {}
-	void graj(std::ostream& o) const 
+	Artysta(const string& a, unsigned b): pseudonim(a), mls(b) {}
+	void graj(std::ostream& stream) const 
 	{
-		std::o << pseudonim<<": "<<mls;
+		std::stream << pseudonim<<": "<<mls;
 	}
 	const string& getPseudonim(std::ostream& o) const { return pseudonim; }
 	unsigned getSluchacze() const { return mls; }
