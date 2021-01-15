@@ -6,18 +6,15 @@
 // tutaj funkcja stworzZespol
 vector<Artysta> stworzZespol(int a, const std::string& s)
 {
-	vector<Artysta> v(a);
-	//vector<Artysta> v;
 	if (s.size() != a)
 	{
 		throw std::logic_error("abc");
 	}
-	else
-	{ 
-	for (int i = 0; i < v.size(); i++)
+
+	vector<Artysta> v;
+	for (int i = 0; i < a; i++)
 	{
 		v[i] = Artysta(s, i + 1);
 	}
 	return v;
-	}
 }
