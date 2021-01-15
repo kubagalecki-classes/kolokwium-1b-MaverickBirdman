@@ -11,10 +11,12 @@ vector<Artysta> stworzZespol(int a, const std::string& s)
 	{
 		std::logic_error("abc");
 	}
-
+	else
+	{ 
 	for (int i = 0; i < v.size(); i++)
 	{
 		v[i] = Artysta(s, i + 1);
 	}
 	return v;
+	}
 }
