@@ -14,7 +14,7 @@ public:
 	Artysta(const string& a, unsigned b) :pseudonim(a), mls(b) {}
 	void graj(std::ostream& o) const 
 	{
-		cout << "[pseudonim]:[mls]\n";
+		std::stream << pseudonim<<": "<<mls;
 	}
 	const string& getPseudonim(std::ostream& o) const { return pseudonim; }
 	unsigned getSluchacze() const { return mls; }
