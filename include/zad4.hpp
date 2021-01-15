@@ -7,9 +7,10 @@
 vector<Artysta> stworzZespol(int a, const std::string& s)
 {
 	vector<Artysta> v(a);
+	//vector<Artysta> v;
 	if (s.size() != a)
 	{
-		std::logic_error("abc");
+		throw std::logic_error("abc");
 	}
 	else
 	{ 
